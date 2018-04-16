@@ -2,7 +2,6 @@
 module.exports = function(app) {
   var articles = require('../controllers/articleController');
 
-  // articles Routes
   app.route('/articles')
     .get(articles.list_all_articles)
     .post(articles.create_an_article);
